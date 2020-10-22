@@ -1,0 +1,78 @@
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+
+
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 500%;
+  height:70vh;
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  height: 70vh;
+  background: #ccc;
+  text-align: center;
+  line-height: 5vh;
+  left:0;
+  text-shadow: white 1px 1px 1px;
+  transition: left 0.5s ease-out;
+}
+
+/* ul li .cardHead {
+  color: #222222;
+  font-weight: normal;
+} */
+
+ul li img {
+  filter: blur(2px) opacity(80%);
+  object-fit: cover;
+  height:69.8vh;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: 20%;
+  height: 100%;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 10px;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 0.6;
+  -webkit-transition: all 0.5s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}

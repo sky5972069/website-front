@@ -1,0 +1,24 @@
+.forum {
+    position:relative;
+    display:flex;
+
+    justify-content: center;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    /* height: 690px; */
+}
+
+
+
+
+/* .forum_picture {
+    position: absolute;
+    top:1px;
+} */
+
+.forum_button {
+    position: absolute;
+    right:2em;
+    bottom:0.5em;
+}
+

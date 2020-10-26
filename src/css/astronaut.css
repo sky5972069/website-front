@@ -218,10 +218,10 @@
   width: calc(var(--space-size)/10*1vw);
   height: 55%;
   border-radius: calc(var(--space-size)/20*1vw);
-  transform: rotate(10deg) translateX(-5px);
+  transform: rotate(10deg) translateX(calc(var(--space-size)/80*(-1vw)));
   transform-origin: top center;
-  background: linear-gradient(-10deg, transparent 30%, var(--shoe) 31%, var(--shoe) 84%, transparent 85%) 0px 20px / 40px 20px no-repeat,
-    radial-gradient(25px circle at 23px 70px, var(--shoe) 25px, transparent); 
+  background: linear-gradient(-10deg, transparent 30%, var(--shoe) 31%, var(--shoe) 84%, transparent 85%) 0px 0.0625vw / 0.1vw 20px0.05vw no-repeat,
+    radial-gradient(0.0625vw circle at 0.0575vw 0.175vw, var(--shoe) 0.0625vw, transparent); 
 }
 
 .lower-leg::before {
@@ -242,14 +242,14 @@
   z-index: 2;
   transform-origin: top left;
 /* //transform: rotate(50deg) translateY(-15px); */
-  transform: rotate(-50deg) translateY(25px);
+  transform: rotate(-50deg) translateY(calc(var(--space-size)/80*5vw));
 }
 .right-leg .upper-leg {
   background: #e7edf0;
 }
 .right-leg .lower-leg {
   background-color: #e7edf0;
-  transform: rotate(40deg) translate(3px, 2px);
+  transform: rotate(40deg) translate(calc(var(--space-size)/400*3vw), calc(var(--space-size)/400*2vw));
 }
 
 
@@ -259,7 +259,7 @@
   z-index: 1;
   transform-origin: top left;
   /* //transform: rotate(-50deg) translateY(10px); */
-  transform: rotate(50deg) translateY(-15px);
+  transform: rotate(50deg) translateY(calc(var(--space-size)/80*(-3vw)));
 }
 .left-leg .upper-leg {
     background: #dbe3ea;
@@ -280,14 +280,14 @@
 .left-hand {
   top: calc(var(--space-size)/40*1vw);
   left: calc(var(--space-size)/4*1vw);
-  transform: rotate(-70deg) translate(-10px, 25px);
+  transform: rotate(-70deg) translate(calc(var(--space-size)/40*(-1vw)), calc(var(--space-size)/80*5vw));
   z-index: 1;
 }
 
 .right-hand {
   top: calc(var(--space-size)/40*13vw); 
   left: calc(var(--space-size)/40*6vw);
-  transform: rotate(35deg) translate(5px, -20px);
+  transform: rotate(35deg) translate(calc(var(--space-size)/80*1vw), calc(var(--space-size)/20*(-1vw)));
   z-index: 5;
 }
 
@@ -314,7 +314,7 @@
   border-radius: calc(var(--space-size)/20*1vw);
   width: calc(var(--space-size)/10*1vw);
   height: 60%;
-  transform: rotate(-25deg) translateX(-6px);
+  transform: rotate(-25deg) translateX(calc(var(--space-size)/400*(-6vw)));
   transform-origin: top center;
 }
 

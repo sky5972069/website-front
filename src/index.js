@@ -10,7 +10,7 @@ import {
 import { onError } from "@apollo/client/link/error"
 import { getMainDefinition } from '@apollo/client/utilities'
 import { WebSocketLink } from '@apollo/link-ws'
-
+require('dotenv').config();
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('token')
   return {
@@ -40,7 +40,7 @@ const httpLink = new HttpLink({
 const link = from([errorLink, httpLink])
 
 const wsLink = new WebSocketLink({
-  uri: `/graphql`,
+  uri: `ws://localhost:${PORT}/graphql`,
   options: {
     reconnect: true
   }
